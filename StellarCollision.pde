@@ -30,7 +30,6 @@ color[] colors = new color[] { color(0,0,205), color(0,0,139), color(0,0,128),
 
 color[] boomColors = new color[] {color(255), color(220), color(0), color(255,240,245), color(255,255,240)};
 
-float h;
                            
 //booleans
 boolean collision = false;
@@ -230,6 +229,11 @@ void collision(){
   }
 }
 
+/*
+*
+* Draws the explosion
+*
+*/
 void drawCollision(){
     translate(collisionStar.getX(), collisionStar.getY());
     
@@ -238,9 +242,9 @@ void drawCollision(){
     strokeWeight(random(1,2));
     xPos = .7*cos(radians(angle)) * radius; // so now we get results between -radius and radius
     yPos = .7*sin(radians(angle)) * radius;
-    line(xPos, yPos, xPos+10, yPos+10);
     line(xPos, yPos, xPos+.5, yPos+.5);
-    line(xPos, yPos, xPos+5, yPos+5);
+    line(xPos, yPos, xPos+1.5, yPos+1.5);
+    line(xPos, yPos, xPos+1, yPos+1);
     
     if(boom){
       boolean x=true;

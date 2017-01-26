@@ -4,6 +4,8 @@ This application is a simple drawing tool made with processing. The screen is fi
 The user can drag stars into each other to create a stellar collision. The collision will expand for as long
 as you hold the mouse down. Pressing b will enhance the collision.
 
+![StellarCollisionTom](StellarCollisionTom.png)
+
 #Instructions
 
 * Click on a star and drag into another
